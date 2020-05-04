@@ -1,3 +1,140 @@
 body {
   margin: 0;
 }
+
+.window {
+  height: 812px;
+  width: 375px;
+}
+
+.status-bar {
+  height: 44px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.status-bar__items {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 1.2rem;
+}
+
+.status-bar__time {
+  flex: 1;
+  margin-left: 0.8;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.status-bar__notch {
+  flex: 4;
+}
+
+.status-bar__icons {
+  flex: 1;
+  display: inline-flex;
+}
+
+.status-bar__icon {
+  flex: auto;
+}
+
+.app-outer {
+  height: 768px;
+}
+
+.app-header {
+  height: 44px;
+  background-color: red;
+}
+
+.app-header__items {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.app-header__blank {
+  flex: 1;
+}
+
+.app-header__title {
+  flex: auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.app-header__button-close {
+  flex: 1;
+  color: white;
+}
+
+.app-content {
+  height: 100%;
+}
+
+.top-wrapper {
+  height: 100%;
+  background-color: #eae0bc;
+  background-image: radial-gradient(#f4f0e4 10%, transparent 20%),
+    radial-gradient(#f4f0e4 10%, transparent 20%);
+  background-position: 0 0, 13px 13px;
+  background-size: 26px 26px;
+  overflow: hidden;
+}
+
+.top-header {
+  margin-top: 2.8rem;
+  text-align: center;
+}
+
+.top-header__icon {
+  display: inline-block;
+  height: 2.1rem;
+  width: 2.1rem;
+  vertical-align: middle;
+}
+
+.top-header__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin: 1rem 2rem;
+  background-color: #f4f0e4;
+  border-radius: 80px 80px 80px 80px;
+}
+
+.top-content__header {
+  flex: 1;
+}
+
+.top-content__content {
+  flex: auto;
+  display: grid;
+  grid: repeat(5, 60px) / auto-flow 80px;
+}
+
+.tanu-portal-app {
+}
+
+.top-content__footer {
+  flex: 1;
+}
+
+.top-footer {
+}
+
+.icon__leaf {
+  background-image: url(./images/leaf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

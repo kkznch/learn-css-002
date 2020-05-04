@@ -4,18 +4,25 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div class class="window">
+    <div class="window">
       <div class="status-bar">
-        <span class="status-bar__time">12:00</span>
-        <span class="status-bar__notch"></span>
-        <span class="status-bar__radio-wave icon__radio-wave"></span>
-        <span class="status-bar__wifi icon__wifi"></span>
-        <span class="status-bar__battery icon__battery"></span>
+        <div class="status-bar__items">
+          <span class="status-bar__time">12:00</span>
+          <span class="status-bar__notch"></span>
+          <div class="status-bar__item status-bar__icons">
+            <span class="status-bar__icon icon__radio-wave">a</span>
+            <span class="status-bar__icon icon__wifi">b</span>
+            <span class="status-bar__icon icon__battery">c</span>
+          </div>
+        </div>
       </div>
       <div class="app-outer">
         <div class="app-header">
-          <span class="app-header__title">あつまれ どうぶつの森</span>
-          <span class="app-header__button-close">おわる</span>
+          <div class="app-header__items">
+            <span class="app-header__blank"></span>
+            <span class="app-header__title">あつまれ どうぶつの森</span>
+            <span class="app-header__button-close">おわる</span>
+          </div>
         </div>
         <div class="app-content">
           <div class="top-wrapper">
