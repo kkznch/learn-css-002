@@ -70,6 +70,7 @@ body {
 .app-header__button-close {
   flex: 1;
   color: white;
+  cursor: pointer;
 }
 
 .app-content {
@@ -115,15 +116,65 @@ body {
 
 .top-content__header {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 3rem 1rem 3rem;
+}
+
+.top-content__player-name {
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.top-content__date {
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .top-content__content {
+  padding: 0 1.6rem;
   flex: auto;
   display: grid;
-  grid: repeat(5, 60px) / auto-flow 80px;
+  grid-template-rows: 136px 136px;
+  grid-template-columns: 50% 1fr;
 }
 
 .tanu-portal-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 132px;
+}
+
+.tanu-portal-app__icon {
+  display: inline-block;
+  flex: auto;
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.tanu-portal-app__icon:hover {
+  animation-duration: 0.2s;
+  animation-name: icon_reduction;
+  animation-fill-mode: forwards;
+}
+
+@keyframes icon_reduction {
+  100% {
+    width: 70px;
+  }
+}
+
+.tanu-portal-app__title {
+  flex: auto;
+  color: #453309;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .top-content__footer {
@@ -135,6 +186,36 @@ body {
 
 .icon__leaf {
   background-image: url(./images/leaf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon_passport {
+  background-image: url(./images/passport.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon_my-design {
+  background-image: url(./images/my-design.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon_keyboard {
+  background-image: url(./images/keyboard.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon_best-friend {
+  background-image: url(./images/best-friend.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon_setting {
+  background-image: url(./images/setting.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
